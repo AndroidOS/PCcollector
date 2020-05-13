@@ -1,10 +1,11 @@
-package com.manuelcarvalho.pccollector
+package com.manuelcarvalho.pccollector.view
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+import com.manuelcarvalho.pccollector.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
