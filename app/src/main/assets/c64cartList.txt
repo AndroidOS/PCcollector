@@ -1,0 +1,473 @@
+*Commodore
+BTX Cartridge V1
+BTX Cartridge V2
+C64 CP/M
+Comal 80, 1985
+Financial Advisor, 1983
+Logo C= Plus/4, 1984
+Magic Desk I (Tape & Desk), 1983
+Magic Voice, 1984
+Music Composer (Ultimax), 1983
+Music Machine (Ultimax), 1983
+Number Nabber & Shape Grabber, 1983
+Super Expander 64,1984
+Simons' Basic,1983
+Visible Solar System (Ultimax), 1982
+Handic Software
+Calc Result C64 (Easy/Advanced), 1985
+Diary 64, 1983
+Forth 64, 1983
+Graf 64, 1983
+Muistio 64, 1983 (Finnische Version von "Diary 64")
+Stat 64, 1983
+Simons' BASIC 64, 1983
+Tele-Data 64, 1983
+Text 64, 1983
+Tool 64, 1983
+Viditel 64, 1982
+*HES
+Forth 64 (V1.2), 1983
+HES Writer 64, 1982
+MON64, 1983
+Paintbrush, 1983
+Turtle Graphics 2, 1983
+Omikron
+GBASIC 64 1.3, 1984
+GBASIC 64 V2.5, 1984
+SHS-Bude
+Hyper BASIC II (V1.5), 1987/88
+S.M. Thorpe
+Human Skeleton Tutorial, 1984
+States and Capitals Tutorial, 1984
+Utah Counties Tutorial, 1984
+Miscellaneous
+CP-Clock F83
+Voice Messenger (Currah), 1984
+Graphics Pirate (Cocroach), 198?
+Koalapainter (Koala), 1983
+Leo's Lectric Paintbrush (Chalkboard), 198?
+Leo's Links (needs Powerpad)
+Mailbox 64 (Eastern House), 1984
+Pagefox (Scanntronik), 1987
+Radarsoft 50k BASIC Radarsoft,1985
+Super Sketch (P-Periperahls), 198?
+Designer's Pencil (Activision), 1984
+TK 1.22 (16.03.1986)
+Vizastar 64
+Write Now (Cardco), 1984
+*Activision
+Beamrider, 1984
+Decathlon, 1984
+Designer's Pencil, 1984
+H.E.R.O., 1984
+Pastfinder, 1984
+Pitfall (Activision), 1984
+Pitfall 2, 1984
+River Raid, 1984
+Space Shuttle, 1984
+Toy Bizarre, 1984
+Zenji, 1984
+Zone Ranger, 1984
+Atari
+Battlezone, 1983
+Centipede, 1983
+Defender, 1983
+Dig Dug, 1983
+Donkey Kong, 1983
+Galaxian, 1983
+Jungle Hunt, 1983
+Moon Patrol, 1983
+Ms. Pacman, 1983
+Pac-Man, 1983
+Pole Position, 1983
+Robotron 2084, 1983
+Broderbund
+Choplifter, 1982
+Christmas Cartridge Pack (Cartridge Collection) with Choplifter and Lode Runner, 1982
+Lode Runner, 1983
+Seafox, 1982
+Serpentine, 1982
+CBS Software
+Big Bird's Funhouse, 1984
+Big Bird's Special Delivery, 1984
+Coconotes, 1984
+Ducks Ahoy!, 1984
+Ernie's Magic Shapes, 1984
+Halftime Battlin' Bands, 1984
+Letter-Go-Round, 1984
+Math Mileage, 1984
+Movie Musical Madness, 1984
+Peanut Butter Panic, 1984
+Sea Horse Hide'n Seek, 1984
+Timebound, 1984
+Webster: The Word Game, 1983
+*Commodore
+A Bee C's,1983
+Blueprint, 1983
+C64 Games System, 1989 (4 games: Fiendish Freddy, Flimbo's Quest, Klax, International Soccer)
+Dragonsden, 1983
+Frog Master, 1983
+Gorf, 1983
+International Soccer alias International Football, 1983
+Jack Attack, 1983
+Lazarian, 1983
+Number Nabber/Shape Grabber, 1983
+Omega Race, 1982
+Solar Fox, 1983
+Star Post, 1983
+Star Ranger, 1983
+Super Games, 1988 (3 games: Colossus Chess, International Football, Silicon Syborgs)
+Super Smash, 1983
+Tooth Invaders, 1982
+Viduzzles, 1983
+Wizard of Wor, 1983
+Avenger, 1983
+Billiards,1983
+Bowling,1983
+Clowns, 1982
+Gorf (MAX), 1983
+Jupiter Lander, 1983
+Kickman, 1982
+Lemans, 1983
+Mole Attack, 1982
+Money Wars, 1982
+Omega Race (MAX), 1982
+Pinball Spectacular, 1982
+Radar Rat Race, 1982
+Road Race/Night Driver, 1982
+Sea Wolf, 1982
+Slalom/Ski,1983
+Speed / Bingo Math, 1982
+Super Alien, 1982
+Wizard of Wor (MAX), 1983
+*Creative Software
+Astroblitz, 1983
+Crisis Mountain, 1983
+Moondust, 1983
+Pipes, 1983
+Save New York, 1983
+Spitball, 1983
+Trashman, 1983
+Dinamic
+After the War,1990
+Aspar GP Master, 1989
+Astromarine Corps, 1990
+Narco Police, 1990
+Satan, 1990
+Disc Company
+Funplay, 1990
+Power Play 64, 1990
+Domark
+Badlands, 1990
+Cyberball, 1990
+License To Kill, 1990
+Vindicators, 1990
+*Epyx
+Gateway to Apshai, 1983
+Jumpman Junior, 1983
+Lunar Outpost
+Pitstop, 1983
+Puzzle Panic
+Sword of Fargoal
+Fisher Price
+Alpha Build, 1984
+Dance Fantasy, 1984
+Hop Along Counting, 1984
+Linking Logic, 1984
+Logic Levels, 1984
+Memory Manor, 1984
+Number Tumblers, 1984
+Sea Speller, 1984
+Song Maker, 1985
+Up'n Add 'Em, 1984
+Handic Software
+Adventure 1: The Mutant Spiders, 1983
+Adventure 3: The Fourth Sarcophagus, 1983
+Bridge 64, 1983
+Clown 64, 1983 (identical with Commodore's Clowns)
+Cup Final 64, 1983 (identical with Commodore's International Soccer)
+Gridrunner 64, 1982 (version of HES' Gridrunner)
+Jupiter Lander 64 (identical with Commodore's Jupiter Lander (Ultimax))
+Kickman 64, 1982 (identical with Commodore's Kickman (Ultimax))
+Omega Race 64, 1982 (identical with Commodore's Omega Race (Ultimax))
+Space Action, 1983
+Wizard 64, 1983 (identical with Commodore's Wizard of Wor (Ultimax))
+*HES
+Attack of the Mutant Camels/Gridrunner II, 1983
+Gridrunner, 1982
+Lazer Zone, 1983
+Maze Master, 1983
+Minnesota Fat's Pool Challenge, 1983
+Mr. TNT, 1983
+Retro Ball, 1982
+Rootin' Tootin', 1983
+The Pit, 1983
+Aracade Classic Pak (4 games: Beamrider Decathlon Frogger River Raid), 1984
+Double Dragon (Melbourne House), 1989
+Galaxions/Munchman (2 games: Galaxions Munchman), 1983
+Ghostbusters , 1984
+Kung Fu Master, 1986
+Leaderboard Golf, 1987
+Novablast, 1984
+Park Patrol, 1984
+Tennis, 1984
+Wonder Boy, 1987
+Learning Tree
+Make-A-Face (identical with Spinnaker's "Facemaker")
+Story Machine (identical with Spinnaker's "Story Machine")
+Maxion
+Bubble Busters, 1984 (identical with Spinnaker's "Bubble Burst")
+Cosmic Combat, 1983 (identical with Spinnaker's "Cosmic Life")
+Gold Record Race, 1984 (identical with Spinnaker's "Jukebox")
+Letter Scramble, 1983 (identical with Spinnaker's "Up For Grabs")
+Monster Voyage, 1984 (identical with Spinnaker's "Aegean Voyage")
+Mr. Computer Products
+Alien Sidestep, 1983
+Amazing Maze, 1983
+Bug Crusher, 1983
+Close Encounters of the Worst Kind, 1983
+Dot Gobbler - two versions, 1983
+Mario's Brewery, 1983
+Space Ric-o-shay,1983
+Tank Wars, 1983
+Ocean
+Chase H.Q. II, 1990
+Batman, 1990
+Battle Command, 1991
+Double Dragon, 1992
+Hook
+Navy Seals, 1990
+Pang, 1990
+Robocop 2, 1990
+Robocop 3, 1990
+Shadow of the Beast, 1990
+Space Gun, 1992
+Terminator 2 Multicart, 1991
+The Great Escape,1991
+Toki, 1991
+Parker Brothers
+Frogger, 1983
+Frogger II - Threeedeep (Sega Parker Brothers), 1984
+Gyruss, 1984
+James Bond, 1984
+Popeye, 1983
+Q*Bert, 1983
+Star Wars, 1983
+Roklan
+Castle Hassle, 1983
+Diamond Mine, 1983
+Rack'em Up, 1983
+Space Journey
+Romox
+Blueprint (identical with Commodore's "Blueprint")
+Dancing Feats, 1983
+Motor Mania, 1982
+Oils Well (identical with Sierra's "Oil's Well")
+Pancho, 1984
+Princess and the Frog, 1983
+*SEGA
+Buck Rogers, 1983
+Congo Bongo, 1983
+Spy Hunter, 1984
+Star Trek, 1983
+Super Zaxxon, 1984
+Tapper, 1983
+Up'n Down, 1984
+Zaxxon, 1984
+Sierra Online, Inc./SierraVision
+BC's Quest for Tires, 1983
+Jawbreaker, 1983
+Learning with Leeper, 1983
+Lunar Leeper, 1983
+Mr. Cool, 1983
+Oil's Well, 1983
+Sammy Lightfoot, 1983
+Threshold, 1983
+Wizard of Id's Wiztype, 1984
+Silverrock
+Guldkorn Expressen
+Harold Hardtand
+Skaermtrolden Hugo, 1990
+Spinnaker
+Aegan Voyage, 1984
+Alf in the Color Caves, 1984
+Alphabet Zoo, 1983
+Bubble Borst, 1984
+Coccinelle, 1983 (French version of Delta Drawing)
+Cosmic Life, 1983
+Facemaker, 1983
+Delta Drawing, 1983
+Fraction Fever, 1983
+Jukebox, 1983
+Kids On Keys, 1983
+Kindercomp, 1983
+Ranch, 1984
+Story Machine
+Springteufel, 1983 (Ravensburger)
+Up for Grabs, 1983
+System 3
+Last Ninja Remix, 1990
+Last Ninja 3
+Myth, 1990
+Turbocharge
+Vendetta
+Turbo Software
+Falconian Invaders, 1983
+TSI Cycles/Laser Cycles, 1983
+TSI Maze Man, 1983
+Turbo Maze Man
+Tyler's Dungeons, 1983
+Ultrex Quadro Maze, 1983
+Miscellaneous
+Action Play (Cartridge Collection) (REX), 1991
+Arnie Armchair's Howzat Cricket Game (Armchair Entertainment), 1984
+Bearjam (Chalkboard)
+Block Hopper (Fantasy Software), 1983
+Changes (Tigervision)
+Checker (Yu-Can), 1984
+Espial (Triggervision), 1984 (Clone of Terra Cresta)
+Final Chesscard (TASC), 1989
+In the Chips (Creative)
+James Bond - In The Living Daylights (Melbourne House), 1990
+Juice (Tronix), 1983 (Q*Bert Clone)
+Micro Maestro
+Mountain King (Beyond), 1983
+Nemesis 2 - The Warlock (Martech), 1990
+Pals Around Town (Hi-Tech)
+Rocky's Boots (Learning)
+Stix (Supersoft), 1983
+The Detective (Argus Press Software), 1990
+The Ghosts'n Goblins (Capcom), 1990
+Viking Raider (Interphase), 1984
+Wrath of the Demon (Readysoft)
+Zorro (Datasoft), 1990
+*Commodore
+Commodore 1700 RAM Expansion
+Commodore 1764 RAM Expansion
+Commodore 1750 RAM Expansion
+Commodore 64 Diagnostic Cartridge, 198?
+Commodore 64/128/D Diagnostic Dead Test Cartridge Rev.781220; with test of the Zero Page, Stack Page, Screen RAM, Color RAM, RAM, sound
+Commodore 64 Final Test Diagnostic Cartridge #586220 (shows defecte IC's), 198?
+Commodore 64/128 Keyboard Dual Diagnostic Cartridge (keyboard check), 198?
+Commodore 64/128 Dual Diagnostic Cartridge, 198?
+*Datel
+256K Copyer / RAM-Disk
+Action Replay, 198?
+Action Replay II, 198?
+Action Replay III, 198?
+Action Replay IV, 198?
+Action Replay 4.2 / Pro, 198?
+Action Cartridge V5.0 / Plus, 1988
+Action Cartridge V5.1 / Bacchus, 1988
+Action Cartridge V6.0 / Plus, 1988
+Action Replay V6.0 / Plus / Pro, 1989
+Action Replay V7.0
+Action Replay V7.5, 1990
+Cartridge Maker
+Nordic Power / Action Cartridge Plus, 198?
+Reset Cartridge
+Dela
+Multi-function cartridge
+S/4 cartridge
+EPROM Brenner Dela I
+EPROM Brenner Dela II
+EPROM Brenner Dela III
+Ramdisk RD.1
+IC-Tester
+Z80 Modul ( s.a. article in Z80.eu blog)
+Profibetriebssystem
+Evesham Micros
+Freeze Frame MKz A, 1985
+Freeze Frame MK II, 1987
+Freeze Frame MK III B, 1988?
+Freeze Frame MK IV, 1988?
+Freeze Frame MK V, 1987?
+Freeze Machine, 1989? (combines Freeze Frame MK V and Lazer MK II)
+Lazer MK II
+Final Cartridge
+Final Cartridge 1 (H.P.Comp Holland), 1985
+Final Cartridge Plus (Milan), 198?
+Final Cartridge 2.x (H.P.Comp Holland / TASK), 1988?
+Final Cartridge 3 (Riska Holland / TASC B.V. Holland), 1987
+Grewe GmbH
+Magic Formel 1.1
+Magic Formel 2.0
+LMS Technologies
+Super Snapshot
+*REX
+128'er Cartridge (REX 9521)
+128er Quickload+DOS (REX 9811)
+128er Turbo Cartrigde - DOS (REX 9604) *very rare*
+Diashowmaker - Freezer Hardcopy (REX 9690)
+Eprom Cartrigde Generator (REX 9506)
+Exos V.3 (REX 9805)
+Expert (REX 9613)
+Goliath 1 MByte Eprom Card (REX 9600/9601)
+Hardcopy Cartridge (REX 9629)
+Hardcopy and Turbo Cartridge (REX 9505)
+Hypradisk (REX 9503)
+Hypradisk 3.0 - REX 3.0 Loader (REX 9615)
+Hypra Tape (REX 9510)
+IC-Tester (REX 9627)
+Monitor Cartridge 89 (REX 9516)
+Pictures Printer (REX 9545)
+Profi DOS (REX 9645)
+Print Screen (REX 9823)
+RS-232 Interface (REX 9626)
+Slow Down (REX 9675)
+Super Operating System (REX 9583)
+Userport Protector (REX 9622)
+V-DOS (14x; REX 9805)
+*Others
+64 Doctor (Trilogic), 1988
+64 Talk 1 (ACME)
+64 Talk 2 (ACME)
+Action Power Cartridge V8.1 (ASI Ltd)
+aktronic Operating System (C128; for 1570/71)
+Capture Cartridge 64 (Jason-Ranheim), 1984
+C64 Diagnostic (Commodore), 198?
+Commodore 64 Black Box Version 3 (Serwis ChArt)
+Commodore 64 Black Box Version 3.2 (Serwis ChArt)
+Disk Booster 64 (Conrad 1990)
+EasyFlash, 2009
+EasyFlash3, 2012
+Epyx Fastload, 1984
+Expert Cartridge (Trilogic), 1988?
+Expert Cartridge (CAT & KORSH), 198?
+Fast Disk (Ha.Soft), 198?
+ISEPIC (ISE), 1985
+Game Killer (Robtek)
+Layout Designer
+Makro Assembler ASS64
+Master-C64 (MA - Micro Application)
+NeoRAM, 2006
+Power Cartridge (KCS), 1985
+Retro Replay, 2001
+SID Cynthcart V1.2.4 Music Cartridge / Music Maker
+Speedy 64
+Super Snapshot (LMS), 1989/90
+The Expert Fastload (Trilogic), 198?
+The Ice Machine (Eurosystems), 198?
+Turbo Load and Save (Spinnaker), 1986
+Ultiliy Cartridge (ShareData), 1985
+Warpspeed 64/128 (Cinemaware), 1987
+SOFT-PROM (unknown producer), 198?
+Modems & I/O-Cards
+64'er online (Dres EDV+Btx GmbH)
+AproSpand-64; Expansion port switch (Aprotek), 1984
+Btx-Com (Digitec-Saarbrücken)
+C64 Ethernet Cartridge
+Computapix IEEE-488 (Pixstik)
+EPROM Card Hesmon
+EPROM Burner Micro Maxi Prommer
+64nic+ Ethernetwork Card
+Grappler CD (Orange)
+Laser 64
+MIDI-Interface
+Modem C64+
+Quick Silver 64 (Skyless Electric Works)
+RAMLink (CMD), 1990
+RAMDrive (CMD)
+RS232 Userport Card C64/128 UP9600
+Swiftlink RS-232 (CMD)
+VIC REL (VIC-20, C64), Handic Software AB, 1983
