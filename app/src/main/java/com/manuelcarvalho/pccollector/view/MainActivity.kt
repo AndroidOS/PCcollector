@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
 
         fab.setOnClickListener { view ->
-            //bulkData()
-            viewModel.refresh()
+            bulkData()
+            //viewModel.refresh()
         }
     }
 
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                         yearMan = "???"
                     }
 
-                    Log.d(TAG, "$yearMan")
+                    //Log.d(TAG, "$yearMan")
                 }
                 val part = Part(
                     manufacturer,
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                     "very",
                     yearMan
                 )
-                Log.d(TAG, "$part")
+                //Log.d(TAG, "$part")
                 cartList.add(part)
             }
 

@@ -24,37 +24,28 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
 
     fun storePartsLocally(cartList: List<Part>) {
         launch {
+            //Log.w(TAG, "list $cartList")
             val dao = PartDatabase(getApplication()).partDao()
-            val list = createCartList(cartList)
             dao.deleteAllParts()
-            val result = dao.insertAll(*list.toTypedArray())
+            val result = dao.insertAll(*cartList.toTypedArray())
+            //Log.w(TAG, "store result $result")
             var i = 0
-            while (i < list.size) {
-                list[i].uuid = result[i].toInt()
+            while (i < cartList.size) {
+                cartList[i].uuid = result[i].toInt()
                 ++i
             }
-            //fetchFromDatabase()
+            fetchFromDatabase()
         }
     }
 
     private fun fetchFromDatabase() {
         //loading.value = true
         launch {
-            //val carts = PartDatabase(getApplication()).partDao().deleteAllParts()
             val carts = PartDatabase(getApplication()).partDao().getAllParts()
             Log.d(TAG, "$carts")
 
 
         }
     }
-
-    private fun createCartList(partList: List<Part>): List<Part> {
-        var list = mutableListOf<Part>()
-        for (q in partList) {
-            //list.add(Mission1(q.mission_name, q.launch_date_unix.toString()))
-        }
-        return list
-    }
-
 
 }
