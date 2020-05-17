@@ -5,21 +5,28 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProviders
 import com.manuelcarvalho.pccollector.R
 import com.manuelcarvalho.pccollector.model.Part
+import com.manuelcarvalho.pccollector.viewmodel.AppViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.InputStream
 
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var viewModel: AppViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
+
         fab.setOnClickListener { view ->
-            bulkData()
+            //bulkData()
+            viewModel.refresh()
         }
     }
 
@@ -40,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bulkData() {
-        var cartList: List<Part>? = null
+        var cartList = mutableListOf<Part>()
         var manufacturer = ""
         var cartName = ""
         var yearMan = ""
@@ -66,12 +73,22 @@ class MainActivity : AppCompatActivity() {
 
                     Log.d(TAG, "$yearMan")
                 }
-
+                val part = Part(
+                    manufacturer,
+                    "Commodore 64",
+                    cartName,
+                    "good",
+                    "123456",
+                    "8k",
+                    "very",
+                    yearMan
+                )
+                Log.d(TAG, "$part")
+                cartList.add(part)
             }
 
 
-            //cartList = splitString(a)
-
+            viewModel.storePartsLocally(cartList)
         } catch (e: Exception) {
             Log.d(TAG, e.toString())
         }

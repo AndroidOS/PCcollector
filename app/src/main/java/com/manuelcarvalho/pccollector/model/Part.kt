@@ -11,7 +11,6 @@ data class Part(
     val condition: String,
     val partNum: String,
     val romUse: String,
-    val gamePlay: String,
     val rarity: String,
     val yearMade: String
 

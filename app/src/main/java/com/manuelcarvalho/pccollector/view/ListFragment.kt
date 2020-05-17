@@ -24,8 +24,7 @@ class ListFragment : Fragment() {
             "1010",
             "8k",
             "f",
-            "V",
-            "1983"
+            "V"
         )
     )
     private val listAdapter = ListAdapter(myArray)
