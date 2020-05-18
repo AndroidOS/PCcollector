@@ -41,11 +41,10 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
     private fun fetchFromDatabase() {
         //loading.value = true
         launch {
-            val carts = PartDatabase(getApplication()).partDao().getAllParts()
-            Log.d(TAG, "$carts")
-
-
+            val cartList = PartDatabase(getApplication()).partDao().getAllParts()
+            carts.value = cartList
         }
     }
+
 
 }

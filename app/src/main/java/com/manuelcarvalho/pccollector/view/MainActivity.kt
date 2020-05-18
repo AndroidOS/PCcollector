@@ -23,9 +23,10 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
+        viewModel.refresh()
 
         fab.setOnClickListener { view ->
-            bulkData()
+            //bulkData()
             //viewModel.refresh()
         }
     }
