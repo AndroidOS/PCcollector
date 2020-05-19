@@ -27,7 +27,7 @@ class ListFragment : Fragment() {
             "Omega Race",
             "Good",
             "1010",
-            "8k",
+            false,
             "f",
             "V"
         )

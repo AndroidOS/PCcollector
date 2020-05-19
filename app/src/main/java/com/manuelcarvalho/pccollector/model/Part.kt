@@ -10,7 +10,7 @@ data class Part(
     val catridge: String,
     val condition: String,
     val partNum: String,
-    val romUse: String,
+    val ownIt: Boolean,
     val rarity: String,
     val yearMade: String
 

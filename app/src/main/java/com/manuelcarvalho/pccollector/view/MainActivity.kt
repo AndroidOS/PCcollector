@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
                     cartName,
                     "good",
                     "123456",
-                    "8k",
+                    true,
                     "very",
                     yearMan
                 )

@@ -34,7 +34,7 @@ class ListAdapter(val cartList: ArrayList<Part>) :
     override fun onBindViewHolder(holder: CartViewHolder, position: Int) {
         holder.view.tv_cart.text = cartList[position].catridge
         holder.view.tv_manufacturer.text = cartList[position].manufacturer
-        holder.view.tv_romUse.text = cartList[position].romUse
+        holder.view.checkBox.isChecked = cartList[position].ownIt
 
 
         holder.view.setOnClickListener {
