@@ -40,6 +40,7 @@ class ListAdapter(val cartList: ArrayList<Part>) :
         holder.view.setOnClickListener {
             val cart = cartList[position].catridge
             Navigation.findNavController(it)
+                .navigate(ListFragmentDirections.actionFirstFragmentToDetailFragment(cart))
 
         }
 
