@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.manuelcarvalho.pccollector.R
 import com.manuelcarvalho.pccollector.model.Part
+import com.manuelcarvalho.pccollector.utils.sendEmail
 import com.manuelcarvalho.pccollector.viewmodel.AppViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.InputStream
@@ -22,12 +23,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        actionBar?.setDisplayShowHomeEnabled(true)
+
         viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
         viewModel.refresh()
 
         fab.setOnClickListener { view ->
             //bulkData()
             //viewModel.refresh()
+            sendEmail(this)
         }
     }
 

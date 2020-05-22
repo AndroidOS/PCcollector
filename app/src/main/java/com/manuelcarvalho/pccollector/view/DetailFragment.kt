@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import com.manuelcarvalho.pccollector.R
 import kotlinx.android.synthetic.main.fragment_detail.*
 
+
 private const val TAG = "DetailFragment"
 
 class DetailFragment : Fragment() {
@@ -22,11 +23,15 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail, container, false)
+        val view = inflater.inflate(R.layout.fragment_detail, container, false)
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
 
         activity?.title = "Web View"
 
