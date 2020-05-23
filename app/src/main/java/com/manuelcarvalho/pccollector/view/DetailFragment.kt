@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.manuelcarvalho.pccollector.R
+import com.manuelcarvalho.pccollector.viewmodel.AppViewModel
 import kotlinx.android.synthetic.main.fragment_detail.*
 
 
@@ -17,6 +19,7 @@ private const val TAG = "DetailFragment"
 class DetailFragment : Fragment() {
 
     private lateinit var cart: String
+    private lateinit var viewModel: AppViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,7 +34,13 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        viewModel = activity?.run {
+            ViewModelProviders.of(this)[AppViewModel::class.java]
+        } ?: throw Exception("Invalid Activity")
 
+
+
+        viewModel.fabDisplay.value = true
 
         activity?.title = "Web View"
 

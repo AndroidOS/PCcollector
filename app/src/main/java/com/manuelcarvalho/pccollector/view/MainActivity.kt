@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.manuelcarvalho.pccollector.R
 import com.manuelcarvalho.pccollector.model.Part
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
         viewModel.refresh()
 
+        observeViewModel()
+        viewModel.fabDisplay.value = false
+
         fab.setOnClickListener { view ->
             //bulkData()
             //viewModel.refresh()
@@ -53,6 +57,20 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    private fun observeViewModel() {
+
+        viewModel.fabDisplay.observe(this, Observer { fabBut ->
+            fabBut?.let {
+                if (fabBut == false) {
+                    fab.hide()
+                } else {
+                    fab.show()
+                }
+            }
+        })
+
     }
 
     private fun bulkData() {
