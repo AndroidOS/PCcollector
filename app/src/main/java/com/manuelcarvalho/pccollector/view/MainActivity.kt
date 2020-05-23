@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             //bulkData()
             //viewModel.refresh()
+
             
             sendEmail(this)
         }
