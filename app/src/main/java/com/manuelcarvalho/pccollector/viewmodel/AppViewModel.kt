@@ -22,6 +22,10 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
         }
     }
 
+    fun changeOwn(num: Int) {
+        Log.d(TAG, "changeOwn $num")
+    }
+
     fun storePartsLocally(cartList: List<Part>) {
         launch {
             //Log.w(TAG, "list $cartList")

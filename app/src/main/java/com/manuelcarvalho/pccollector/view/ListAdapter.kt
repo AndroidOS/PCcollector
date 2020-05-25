@@ -44,8 +44,9 @@ class ListAdapter(
         holder.view.checkBox.isChecked = cartList[position].ownIt
 
         holder.view.checkBox.setOnClickListener {
-            Log.d(TAG, "${cartList[position].catridge} clicked")
-            callback.onClick()
+            val num = cartList[position].uuid
+            Log.d(TAG, "${cartList[position].uuid} clicked")
+            callback.onClick(num)
         }
 
 
@@ -53,7 +54,7 @@ class ListAdapter(
             val cart = cartList[position].catridge
             Navigation.findNavController(it)
                 .navigate(ListFragmentDirections.actionFirstFragmentToDetailFragment(cart))
-            
+
 
         }
 
@@ -65,5 +66,5 @@ class ListAdapter(
 }
 
 interface OnClickListenerInterface {
-    fun onClick()
+    fun onClick(num: Int)
 }

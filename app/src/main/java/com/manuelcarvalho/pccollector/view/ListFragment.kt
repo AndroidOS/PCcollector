@@ -68,8 +68,9 @@ class ListFragment : Fragment(), OnClickListenerInterface {
         })
     }
 
-    override fun onClick() {
+    override fun onClick(num: Int) {
         Log.d(TAG, "Onclicked")
+        viewModel.changeOwn(num)
     }
 
 }
