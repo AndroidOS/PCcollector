@@ -15,7 +15,8 @@ import com.manuelcarvalho.pccollector.viewmodel.AppViewModel
 import kotlinx.android.synthetic.main.fragment_list.*
 
 private const val TAG = "ListFragment"
-class ListFragment : Fragment() {
+
+class ListFragment : Fragment(), OnClickListenerInterface {
 
     private lateinit var viewModel: AppViewModel
 
@@ -32,7 +33,7 @@ class ListFragment : Fragment() {
             "V"
         )
     )
-    private val listAdapter = ListAdapter(myArray)
+    private val listAdapter = ListAdapter(myArray, this)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -66,4 +67,9 @@ class ListFragment : Fragment() {
             }
         })
     }
+
+    override fun onClick() {
+        Log.d(TAG, "Onclicked")
+    }
+
 }

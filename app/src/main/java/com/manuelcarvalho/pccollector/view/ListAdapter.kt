@@ -1,5 +1,6 @@
 package com.manuelcarvalho.pccollector.view
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,13 @@ import com.manuelcarvalho.pccollector.model.Part
 import kotlinx.android.synthetic.main.list_view.view.*
 
 
-class ListAdapter(val cartList: ArrayList<Part>) :
+private const val TAG = "ListAdapter"
+
+class ListAdapter(
+    val cartList: ArrayList<Part>,
+    private val callback: OnClickListenerInterface
+
+) :
     RecyclerView.Adapter<ListAdapter.CartViewHolder>() {
 
     fun updatelist(cartList1: List<Part>) {
@@ -36,16 +43,27 @@ class ListAdapter(val cartList: ArrayList<Part>) :
         holder.view.tv_manufacturer.text = cartList[position].manufacturer
         holder.view.checkBox.isChecked = cartList[position].ownIt
 
+        holder.view.checkBox.setOnClickListener {
+            Log.d(TAG, "${cartList[position].catridge} clicked")
+            callback.onClick()
+        }
+
 
         holder.view.setOnClickListener {
             val cart = cartList[position].catridge
             Navigation.findNavController(it)
                 .navigate(ListFragmentDirections.actionFirstFragmentToDetailFragment(cart))
+            
 
         }
+
 
     }
 
     //.navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment())
     class CartViewHolder(var view: View) : RecyclerView.ViewHolder(view)
+}
+
+interface OnClickListenerInterface {
+    fun onClick()
 }
