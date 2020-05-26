@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.manuelcarvalho.pccollector.model.Part
 import com.manuelcarvalho.pccollector.model.PartDatabase
+import io.reactivex.disposables.CompositeDisposable
 import kotlinx.coroutines.launch
 
 
@@ -12,8 +13,13 @@ private const val TAG = "AppViewModel"
 
 class AppViewModel(application: Application) : BaseViewModel(application) {
 
+
     val carts by lazy { MutableLiveData<List<Part>>() }
     val fabDisplay = MutableLiveData<Boolean>()
+
+    protected val disposable = CompositeDisposable()
+
+    private var dataBaseInstance = PartDatabase.invoke(application)
 
     fun refresh() {
         Log.w(TAG, "")
@@ -23,7 +29,8 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
     }
 
     fun changeOwn(num: Int) {
-        Log.d(TAG, "changeOwn $num")
+        //Log.d(TAG, "changeOwn $num")
+        fetchPartDatabase(num)
     }
 
     fun storePartsLocally(cartList: List<Part>) {
@@ -49,6 +56,40 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
             carts.value = cartList
         }
     }
+
+    private fun fetchPartDatabase(uuid: Int) {
+        //loading.value = true
+        launch {
+            val cart = PartDatabase(getApplication()).partDao().getPart(uuid)
+            if (cart.ownIt == true) {
+                launch {
+                    //PartDatabase(getApplication()).partDao().updateOwnIt(uuid, false)
+                    changeSinglePart(uuid, false)
+                }
+            } else {
+//                launch {
+//                    PartDatabase(getApplication()).partDao().updateOwnIt(uuid, true)
+                changeSinglePart(uuid, false)
+//                }
+//            }
+                Log.d(TAG, "$cart")
+
+            }
+        }
+    }
+
+    private fun changeSinglePart(uuid: Int, boolean: Boolean) {
+        launch {
+            dataBaseInstance.partDao().updateOwnIt(uuid, boolean)
+        }
+    }
+
+
+
+
+
+
+
 
 
 }

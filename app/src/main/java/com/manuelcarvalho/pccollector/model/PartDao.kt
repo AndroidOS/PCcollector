@@ -14,8 +14,11 @@ interface PartDao {
     suspend fun getAllParts(): List<Part>
 
     @androidx.room.Query("SELECT * FROM part WHERE uuid = :partId")
-    suspend fun getParts(partId: Int): Part
+    suspend fun getPart(partId: Int): Part
 
     @androidx.room.Query("DELETE FROM part")
     suspend fun deleteAllParts()
+
+    @androidx.room.Query("UPDATE part SET ownIt = :ownIt WHERE uuid = :partId")
+    suspend fun updateOwnIt(partId: Int, ownIt: Boolean): Int
 }
