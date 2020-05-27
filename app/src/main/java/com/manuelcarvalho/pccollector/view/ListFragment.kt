@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.gms.ads.doubleclick.PublisherAdRequest
 import com.manuelcarvalho.pccollector.R
 import com.manuelcarvalho.pccollector.model.Part
 import com.manuelcarvalho.pccollector.viewmodel.AppViewModel
@@ -46,6 +47,10 @@ class ListFragment : Fragment(), OnClickListenerInterface {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        val adRequest = PublisherAdRequest.Builder().build()
+        publisherAdView.loadAd(adRequest)
+
         viewModel = activity?.run {
             ViewModelProviders.of(this)[AppViewModel::class.java]
         } ?: throw Exception("Invalid Activity")
@@ -72,5 +77,6 @@ class ListFragment : Fragment(), OnClickListenerInterface {
         Log.d(TAG, "Onclicked")
         viewModel.changeOwn(num)
     }
+
 
 }

@@ -62,18 +62,9 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
         launch {
             val cart = PartDatabase(getApplication()).partDao().getPart(uuid)
             if (cart.ownIt == true) {
-                launch {
-                    //PartDatabase(getApplication()).partDao().updateOwnIt(uuid, false)
                     changeSinglePart(uuid, false)
-                }
             } else {
-//                launch {
-//                    PartDatabase(getApplication()).partDao().updateOwnIt(uuid, true)
-                changeSinglePart(uuid, false)
-//                }
-//            }
-                Log.d(TAG, "$cart")
-
+                changeSinglePart(uuid, true)
             }
         }
     }
