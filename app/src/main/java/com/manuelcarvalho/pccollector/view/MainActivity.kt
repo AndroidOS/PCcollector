@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.manuelcarvalho.pccollector.R
 import com.manuelcarvalho.pccollector.model.Part
+import com.manuelcarvalho.pccollector.utils.dialogueQuery
 import com.manuelcarvalho.pccollector.utils.sendEmail
 import com.manuelcarvalho.pccollector.viewmodel.AppViewModel
 import kotlinx.android.synthetic.main.activity_main.*
@@ -54,9 +55,15 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+
+            R.id.action_query -> {
+                dialogueQuery(this)
+                return true
+            }
             else -> super.onOptionsItemSelected(item)
         }
+
+
     }
 
     private fun observeViewModel() {
