@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
         viewModel.refresh()
 
+
         observeViewModel()
         viewModel.fabDisplay.value = false
 
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
 
             R.id.action_query -> {
-                dialogueQuery(this)
+                dialogueQuery(this, viewModel.getManufacturers())
                 return true
             }
             else -> super.onOptionsItemSelected(item)

@@ -33,6 +33,14 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
         fetchPartDatabase(num)
     }
 
+    fun getManufacturers(): List<String> {
+        var manufacturers = mutableListOf<String>()
+        for (n in carts.value!!) {
+            manufacturers.add(n.manufacturer)
+        }
+        return manufacturers
+    }
+
     fun storePartsLocally(cartList: List<Part>) {
         launch {
             //Log.w(TAG, "list $cartList")

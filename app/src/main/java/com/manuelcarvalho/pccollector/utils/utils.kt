@@ -30,11 +30,11 @@ fun sendEmail(context: Context) {
 
 }
 
-fun dialogueQuery(context: Context) {
+fun dialogueQuery(context: Context, items: List<String>) {
     val alertDialog: AlertDialog? = context.let {
         val builder = AlertDialog.Builder(it)
 
-        var items = arrayOf<CharSequence>(
+        var items1 = arrayOf<CharSequence>(
             "Academy",
             "Atarisoft",
             "Beyond",
@@ -64,7 +64,7 @@ fun dialogueQuery(context: Context) {
 
 
             builder.setItems(
-                items,
+                items1,
 
                 DialogInterface.OnClickListener { dialog, which ->
 
