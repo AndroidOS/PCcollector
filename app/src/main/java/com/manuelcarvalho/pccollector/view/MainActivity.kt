@@ -172,7 +172,7 @@ class MainActivity : AppCompatActivity() {
                     DialogInterface.OnClickListener { dialog, which ->
                         manu = items1[which].toString()
                         Log.d(TAG, " onClick $manu")
-
+                        viewModel.queryManufacturer(manu)
 
                     })
 

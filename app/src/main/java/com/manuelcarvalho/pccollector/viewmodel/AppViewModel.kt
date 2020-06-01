@@ -33,12 +33,15 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
         fetchPartDatabase(num)
     }
 
-    fun queryManufacturer(string: String) {
+    fun queryManufacturer(str: String) {
         launch {
             val dao = PartDatabase(getApplication()).partDao()
 
-            val result = dao.getManuParts(string)
+            val result = dao.getManuParts(str)
+
             carts.value = result
+            //Log.d(TAG,"viewmodel $result")
+
         }
 
     }
