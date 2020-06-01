@@ -78,5 +78,9 @@ class ListFragment : Fragment(), OnClickListenerInterface {
         viewModel.changeOwn(num)
     }
 
+    override fun onChoice(string: String) {
+        Log.d(TAG, "Onchoice $string")
+    }
+
 
 }

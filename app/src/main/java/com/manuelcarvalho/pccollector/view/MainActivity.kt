@@ -1,15 +1,16 @@
 package com.manuelcarvalho.pccollector.view
 
+import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.manuelcarvalho.pccollector.R
 import com.manuelcarvalho.pccollector.model.Part
-import com.manuelcarvalho.pccollector.utils.dialogueQuery
 import com.manuelcarvalho.pccollector.utils.sendEmail
 import com.manuelcarvalho.pccollector.viewmodel.AppViewModel
 import kotlinx.android.synthetic.main.activity_main.*
@@ -58,7 +59,8 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
 
             R.id.action_query -> {
-                dialogueQuery(this, viewModel.getManufacturers())
+                val a = dialogueQuery(viewModel.getManufacturers())
+                Log.d(TAG, "Options $a")
                 return true
             }
             else -> super.onOptionsItemSelected(item)
@@ -127,5 +129,61 @@ class MainActivity : AppCompatActivity() {
         } catch (e: Exception) {
             Log.d(TAG, e.toString())
         }
+    }
+
+    fun dialogueQuery(items: List<String>): String {
+
+        var manu = ""
+        val alertDialog: AlertDialog? = this.let {
+            val builder = AlertDialog.Builder(it)
+
+            var items1 = arrayOf<CharSequence>(
+                "Academy",
+                "Atarisoft",
+                "Beyond",
+                "Boone",
+                "Broderbund",
+                "CBS Soft.",
+                "Commodore",
+                "Creative",
+                "HES",
+                "Imagic",
+                "Xonox"
+            )
+            builder.apply {
+                setPositiveButton(
+                    R.string.ok,
+                    DialogInterface.OnClickListener { dialog, id ->
+                        // User clicked OK button
+                    })
+                setNegativeButton(R.string.cancel,
+                    DialogInterface.OnClickListener { dialog, id ->
+                        // User cancelled the dialog
+                    })
+
+                setTitle("Choose Cartridge")
+
+                //Test data
+
+
+                builder.setItems(
+                    items1,
+
+                    DialogInterface.OnClickListener { dialog, which ->
+                        manu = items1[which].toString()
+                        Log.d(TAG, " onClick $manu")
+
+
+                    })
+
+            }
+
+            builder.create()
+        }
+
+        alertDialog?.show()
+
+        return manu
+
     }
 }

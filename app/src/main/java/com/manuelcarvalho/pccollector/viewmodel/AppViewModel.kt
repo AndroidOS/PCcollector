@@ -33,6 +33,16 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
         fetchPartDatabase(num)
     }
 
+    fun queryManufacturer(string: String) {
+        launch {
+            val dao = PartDatabase(getApplication()).partDao()
+
+            val result = dao.getManuParts(string)
+            carts.value = result
+        }
+
+    }
+
     fun getManufacturers(): List<String> {
         var manufacturers = mutableListOf<String>()
         for (n in carts.value!!) {

@@ -21,4 +21,7 @@ interface PartDao {
 
     @androidx.room.Query("UPDATE part SET ownIt = :ownIt WHERE uuid = :partId")
     suspend fun updateOwnIt(partId: Int, ownIt: Boolean): Int
+
+    @androidx.room.Query("SELECT * FROM part WHERE manufacturer = :string")
+    suspend fun getManuParts(string: String): List<Part>
 }

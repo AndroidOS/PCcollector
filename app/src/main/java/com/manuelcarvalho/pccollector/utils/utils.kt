@@ -1,13 +1,13 @@
 package com.manuelcarvalho.pccollector.utils
 
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
-import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat.startActivity
-import com.manuelcarvalho.pccollector.R
 
+private const val TAG = "utils"
 fun sendEmail(context: Context) {
+
+
     var stringList = ""
     var manufacturer = ""
 //    for (n in viewModel.carts.value!!) {
@@ -30,51 +30,4 @@ fun sendEmail(context: Context) {
 
 }
 
-fun dialogueQuery(context: Context, items: List<String>) {
-    val alertDialog: AlertDialog? = context.let {
-        val builder = AlertDialog.Builder(it)
 
-        var items1 = arrayOf<CharSequence>(
-            "Academy",
-            "Atarisoft",
-            "Beyond",
-            "Boone",
-            "Broderbund",
-            "CBS Soft.",
-            "Commodore",
-            "Creative",
-            "HES",
-            "Imagic",
-            "Xonox"
-        )
-        builder.apply {
-            setPositiveButton(
-                R.string.ok,
-                DialogInterface.OnClickListener { dialog, id ->
-                    // User clicked OK button
-                })
-            setNegativeButton(R.string.cancel,
-                DialogInterface.OnClickListener { dialog, id ->
-                    // User cancelled the dialog
-                })
-
-            setTitle("Choose Cartridge")
-
-            //Test data
-
-
-            builder.setItems(
-                items1,
-
-                DialogInterface.OnClickListener { dialog, which ->
-
-
-                })
-
-        }
-
-        builder.create()
-    }
-
-    alertDialog?.show()
-}

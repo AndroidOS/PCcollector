@@ -67,4 +67,5 @@ class ListAdapter(
 
 interface OnClickListenerInterface {
     fun onClick(num: Int)
+    fun onChoice(string: String)
 }
