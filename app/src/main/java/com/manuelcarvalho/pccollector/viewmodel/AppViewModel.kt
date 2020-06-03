@@ -17,6 +17,8 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
     val carts by lazy { MutableLiveData<List<Part>>() }
     val fabDisplay = MutableLiveData<Boolean>()
 
+    val manufacturers by lazy { MutableLiveData<List<String>>() }
+
     protected val disposable = CompositeDisposable()
 
     private var dataBaseInstance = PartDatabase.invoke(application)
@@ -40,18 +42,18 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
             val result = dao.getManuParts(str)
 
             carts.value = result
-            //Log.d(TAG,"viewmodel $result")
+            Log.d(TAG, "viewmodel $result")
 
         }
 
     }
 
-    fun getManufacturers(): List<String> {
-        var manufacturers = mutableListOf<String>()
+    fun getManufacturers() {
+        var manufacturers1 = mutableListOf<String>()
         for (n in carts.value!!) {
-            manufacturers.add(n.manufacturer)
+            manufacturers1.add(n.manufacturer)
         }
-        return manufacturers
+        manufacturers.value = manufacturers1
     }
 
     fun storePartsLocally(cartList: List<Part>) {

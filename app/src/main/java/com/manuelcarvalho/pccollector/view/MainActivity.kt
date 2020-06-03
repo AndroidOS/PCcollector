@@ -20,6 +20,8 @@ private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
 
     private lateinit var viewModel: AppViewModel
+    var manu1 = arrayOf<CharSequence>()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +35,16 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
         viewModel.refresh()
 
+        val manu: List<String> = viewModel.manufacturers.value!!
+
+        //val exampleItems: Array<CharSequence?>? = exampleList?.size?.let { it1 -> Array(it1,{ i -> exampleArray?.get(i) }) }
+        val dialogueItems: Array<CharSequence?>? =
+            manu.size.let { it1 -> Array(it1, { i -> manu.get(i) }) }
+//        val charSequenceItems: Array<CharSequence> =
+//            manu.toArray(arrayOfNulls<CharSequence>(manu.size()))
+        Log.d(TAG, "$dialogueItems")
+
+        //manu1 = dialogueItems
 
         observeViewModel()
         viewModel.fabDisplay.value = false
@@ -41,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             //bulkData()
             //viewModel.refresh()
 
-            
+
             sendEmail(this)
         }
     }
@@ -59,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
 
             R.id.action_query -> {
-                val a = dialogueQuery(viewModel.getManufacturers())
+                val a = dialogueQuery(manu1)
                 Log.d(TAG, "Options $a")
                 return true
             }
@@ -131,7 +143,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun dialogueQuery(items: List<String>): String {
+    fun dialogueQuery(items: Array<CharSequence>): String {
 
         var manu = ""
         val alertDialog: AlertDialog? = this.let {
@@ -167,7 +179,7 @@ class MainActivity : AppCompatActivity() {
 
 
                 builder.setItems(
-                    items1,
+                    items,
 
                     DialogInterface.OnClickListener { dialog, which ->
                         manu = items1[which].toString()
