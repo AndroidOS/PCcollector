@@ -148,23 +148,11 @@ class MainActivity : AppCompatActivity() {
         val dialogueItems: Array<CharSequence?>? =
             manu.size.let { it1 -> Array(it1, { i -> manu.get(i) }) }
 
+
         var manu2 = ""
         val alertDialog: AlertDialog? = this.let {
             val builder = AlertDialog.Builder(it)
 
-            var items1 = arrayOf<CharSequence>(
-                "Academy",
-                "Atarisoft",
-                "Beyond",
-                "Boone",
-                "Broderbund",
-                "CBS Soft.",
-                "Commodore",
-                "Creative",
-                "HES",
-                "Imagic",
-                "Xonox"
-            )
             builder.apply {
                 setPositiveButton(
                     R.string.ok,
@@ -178,15 +166,13 @@ class MainActivity : AppCompatActivity() {
 
                 setTitle("Choose Cartridge")
 
-                //Test data
-
-
+                
                 builder.setItems(
                     dialogueItems,
 
                     DialogInterface.OnClickListener { dialog, which ->
-                        manu2 = items1[which].toString()
-                        Log.d(TAG, " onClick $manu")
+                        manu2 = dialogueItems?.get(which) as String
+                        Log.d(TAG, " onClick $manu2   $which")
                         viewModel.queryManufacturer(manu2)
 
                     })

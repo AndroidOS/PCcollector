@@ -37,6 +37,7 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
     }
 
     fun queryManufacturer(str: String) {
+        Log.d(TAG, "vString $str")
         launch {
             val dao = PartDatabase(getApplication()).partDao()
 
