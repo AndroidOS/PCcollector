@@ -27,6 +27,7 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
         Log.w(TAG, "")
         launch {
             fetchFromDatabase()
+
         }
     }
 
@@ -76,7 +77,14 @@ class AppViewModel(application: Application) : BaseViewModel(application) {
         //loading.value = true
         launch {
             val cartList = PartDatabase(getApplication()).partDao().getAllParts()
+            var manufacturers1 = mutableListOf<String>()
             carts.value = cartList
+            for (n in carts.value!!) {
+                if (!manufacturers1.contains(n.manufacturer)) {
+                    manufacturers1.add(n.manufacturer)
+                }
+            }
+            manufacturers.value = manufacturers1
         }
     }
 

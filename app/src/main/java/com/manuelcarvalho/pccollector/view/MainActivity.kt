@@ -35,20 +35,19 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this)[AppViewModel::class.java]
         viewModel.refresh()
 
-        val manu: List<String> = viewModel.manufacturers.value!!
+
 
         //val exampleItems: Array<CharSequence?>? = exampleList?.size?.let { it1 -> Array(it1,{ i -> exampleArray?.get(i) }) }
-        val dialogueItems: Array<CharSequence?>? =
-            manu.size.let { it1 -> Array(it1, { i -> manu.get(i) }) }
+
 //        val charSequenceItems: Array<CharSequence> =
 //            manu.toArray(arrayOfNulls<CharSequence>(manu.size()))
-        Log.d(TAG, "$dialogueItems")
+        // Log.d(TAG, "$dialogueItems")
 
         //manu1 = dialogueItems
 
         observeViewModel()
         viewModel.fabDisplay.value = false
-
+        //viewModel.getManufacturers()
         fab.setOnClickListener { view ->
             //bulkData()
             //viewModel.refresh()
@@ -145,7 +144,11 @@ class MainActivity : AppCompatActivity() {
 
     fun dialogueQuery(items: Array<CharSequence>): String {
 
-        var manu = ""
+        val manu: List<String> = viewModel.manufacturers.value!!
+        val dialogueItems: Array<CharSequence?>? =
+            manu.size.let { it1 -> Array(it1, { i -> manu.get(i) }) }
+
+        var manu2 = ""
         val alertDialog: AlertDialog? = this.let {
             val builder = AlertDialog.Builder(it)
 
@@ -179,12 +182,12 @@ class MainActivity : AppCompatActivity() {
 
 
                 builder.setItems(
-                    items,
+                    dialogueItems,
 
                     DialogInterface.OnClickListener { dialog, which ->
-                        manu = items1[which].toString()
+                        manu2 = items1[which].toString()
                         Log.d(TAG, " onClick $manu")
-                        viewModel.queryManufacturer(manu)
+                        viewModel.queryManufacturer(manu2)
 
                     })
 
@@ -195,7 +198,7 @@ class MainActivity : AppCompatActivity() {
 
         alertDialog?.show()
 
-        return manu
+        return manu2
 
     }
 }
