@@ -2,18 +2,20 @@ package com.manuelcarvalho.pccollector.utils
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.core.content.ContextCompat.startActivity
 
 private const val TAG = "utils"
-fun sendEmail(context: Context) {
+fun sendEmail(context: Context, list: List<String>) {
 
-
+    Log.d(TAG, "${list}")
     var stringList = ""
     var manufacturer = ""
-//    for (n in viewModel.carts.value!!) {
-//        stringList += "${n.catridge}\n"
-//        manufacturer = n.manufacturer
-//    }
+
+    for (n in list) {
+        stringList += "${n}\n"
+        //manufacturer = n.manufacturer
+    }
 
     val to = "tom@gmail.com"
     val subject = "cartridge list for ${manufacturer}."

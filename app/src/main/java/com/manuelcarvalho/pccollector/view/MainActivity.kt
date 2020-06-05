@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             //viewModel.refresh()
 
 
-            sendEmail(this)
+            sendEmail(this, makeList())
         }
     }
 
@@ -186,5 +186,17 @@ class MainActivity : AppCompatActivity() {
 
         return manu2
 
+    }
+
+    private fun makeList(): List<String> {
+        var carts = mutableListOf<String>()
+        val cartList = viewModel.carts.value
+        if (cartList != null) {
+            for (n in cartList) {
+                carts.add(n.catridge)
+            }
+        }
+
+        return carts
     }
 }
